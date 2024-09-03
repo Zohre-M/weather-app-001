@@ -2,11 +2,11 @@
   background: rgb(249, 247, 254);
   font-family: "Roboto", sans-serif;
 }
-.Weather header {
+header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 30px;
 }
-.Weather main {
+main {
   display: flex;
   justify-content: space-between;
   margin: 30px 0;
@@ -14,7 +14,7 @@
 .Weather a {
   color: rgb(136, 93, 241);
 }
-.Weather footer {
+footer {
   color: rgba(0, 0, 0, 0.6);
   font-size: 14px;
   text-align: center;
@@ -23,7 +23,7 @@
   line-height: 1;
 }
 
-.Weather .container {
+.container {
   background: white;
   width: 600px;
   margin: 50px auto;
@@ -31,7 +31,7 @@
   border-radius: 16px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
-.Weather .search-bar {
+.search-bar {
   background: rgb(249, 247, 254);
   border: none;
   border-radius: 6px;
@@ -39,7 +39,7 @@
   width: 80%;
   font-size: 16px;
 }
-.Weather .submit-button {
+.submit-button {
   color: white;
   border: none;
   border-radius: 6px;
@@ -50,36 +50,36 @@
   margin-left: 4px;
 }
 
-.Weather .current-weather-data {
+.current-weather-data {
   color: rgba(39, 33, 66, 0.4);
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
 }
 
-.Weather .current-weather-data-amount {
+.current-weather-data-amount {
   color: rgb(246, 82, 130);
   font-weight: 700;
 }
-.Weather .current-city {
+.current-city {
   font-size: 38px;
   line-height: 48px;
   font-weight: 700;
   margin: 0 auto;
 }
-.Weather .current-temp {
+.current-temp {
   display: flex;
   justify-content: left;
 }
-.Weather .current-temp-amount {
+.current-temp-amount {
   font-size: 88px;
   font-weight: 700;
 }
-.Weather .current-temp-unit {
+.current-temp-unit {
   font-size: 28px;
   margin-top: 6px;
 }
-.Weather .current-temp-icon {
+.current-temp-icon {
   margin-top: 0 auto;
   width: 90px;
 }

@@ -16,7 +16,7 @@ export default function Weather() {
       </header>
       <main>
         <div>
-          <h1 className="current-city"></h1>
+          <h1 className="current-city">Paris</h1>
           <p className="current-weather-data">
             <span></span>,<span></span>
             <br />
@@ -35,19 +35,24 @@ export default function Weather() {
       </main>
       <footer>
         <p>
-          This project was coded by
-          <a href="https://github.com/Zohre-M" target="_blank">
+          This project was coded by {""}
+          <a href="https://github.com/Zohre-M" target="_blank" rel="noreferrer">
             Zohreh Maghsoodi
           </a>
-          , is
+          , is {""}
           <a
-            href="https://github.com/Zohre-M/tempo-atmosferico"
+            href="https://github.com/Zohre-M/weather-app-001.git "
             target="_blank"
+            rel="noreferrer"
           >
-            open-sourced on GitHub
+            open-sourced on GitHub {""}
           </a>
-          and
-          <a href="https://tempo-atmosferico.vercel.app/" target="_blank">
+          and {""}
+          <a
+            href="https://weather-app-001-three.vercel.app"
+            target="_blank"
+            rel="noreferrer"
+          >
             hosted on Vercel
           </a>
         </p>
