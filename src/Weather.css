@@ -1,0 +1,51 @@
+body {
+  background: rgb(249, 247, 254);
+  font-family: "Roboto", sans-serif;
+}
+.frame {
+  background-color: white;
+  display: block;
+  margin: 50px auto;
+  max-width: 600px;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+}
+header {
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+main h1 {
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 700;
+}
+.search-bar {
+  width: 80%;
+  margin-right: 10px;
+  background: rgb(249, 247, 254);
+  border: 0;
+
+  border-radius: 6px;
+  font-size: 16px;
+  padding: 15px 20px;
+}
+.search-button {
+  width: 17%;
+  border: 0;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 16px;
+  padding: 15px 20px;
+  background: rgb(136, 93, 241);
+  color: white;
+}
+@media (max-width: 600px) {
+  .search-bar {
+    width: 100%;
+  }
+  .search-button {
+    margin-top: 20px;
+    width: 100px;
+  }
+}

@@ -1,62 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
+import "./Weather.css";
 
 export default function Weather() {
+  const [city, setCity] = useState("Milan");
+  function handleChange() {}
+  function handleSubmit() {}
   return (
-    <div class="container">
+    <div className="frame">
       <header>
-        <form>
+        <form onSubmit={handleSubmit}>
           <input
             type="search"
             placeholder="Enter a city..."
             required
+            onChange={handleChange}
             className="search-bar"
           />
-          <input type="submit" value="Search" className="submit-button" />
+          <input type="submit" value="Search" className="search-button" />
         </form>
       </header>
       <main>
-        <div>
-          <h1 className="current-city">Paris</h1>
-          <p className="current-weather-data">
-            <span></span>,<span></span>
-            <br />
-            Humidity:
-            <span className="current-weather-data-amount"></span>, Wind:
-            <span className="current-weather-data-amount"></span>
-          </p>
-        </div>
-        <div className="current-temp">
+        <div className="current-weather">
           <div>
-            <div></div>
+            <h1>{city}</h1>
+            <p>Monday 22:32, clear sky</p>
+            <p>Humidity: 89%, Wind: 1km/h</p>
           </div>
-          <div className="current-temp-amount"></div>
-          <div className="current-temp-unit">°C</div>
         </div>
       </main>
-      <footer>
-        <p>
-          This project was coded by {""}
-          <a href="https://github.com/Zohre-M" target="_blank" rel="noreferrer">
-            Zohreh Maghsoodi
-          </a>
-          , is {""}
-          <a
-            href="https://github.com/Zohre-M/weather-app-001.git "
-            target="_blank"
-            rel="noreferrer"
-          >
-            open-sourced on GitHub {""}
-          </a>
-          and {""}
-          <a
-            href="https://weather-app-001-three.vercel.app"
-            target="_blank"
-            rel="noreferrer"
-          >
-            hosted on Vercel
-          </a>
-        </p>
-      </footer>
     </div>
   );
 }
