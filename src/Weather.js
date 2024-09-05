@@ -1,10 +1,29 @@
 import React, { useState } from "react";
+import axios from "axios";
 import "./Weather.css";
 
 export default function Weather() {
   const [city, setCity] = useState("Milan");
-  function handleChange() {}
-  function handleSubmit() {}
+  const [weatherData, getWeatherData] = useState({ ready: false });
+  function displayWeatherData(response) {
+    let weatherData = {
+      ready: true,
+      currentTemperature: Math.round(response.data.temperature.current),
+      currentDescription: response.data.condition.description,
+      currentHumidity: response.data.temperature.humidity,
+      currentWindSpeed: Math.round(response.data.wind.speed),
+      currentIconUrl: response.data.condition.icon_url,
+    };
+  }
+  function handleChange(event) {
+    setCity(event.target.value);
+  }
+  function handleSubmit(event) {
+    event.preventDefault();
+    let apiKey = "118fe35e7ob1e1d3379dc44t5fac90b2";
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&untis=metric`;
+    axios.get(apiUrl).then(displayWeatherData);
+  }
   return (
     <div className="frame">
       <header>
@@ -23,14 +42,17 @@ export default function Weather() {
         <div className="current-weather">
           <div className="current-weather-data">
             <h1>{city}</h1>
-            <p>Monday 22:32, clear sky</p>
+            <p>Monday 22:32, {weatherData.currentDescription}</p>
             <p>
-              Humidity: <span>89%</span>, Wind: <span>1km/h</span>
+              Humidity: <span>{weatherData.currentHumidity}%</span>, Wind:{" "}
+              <span>{weatherData.currentWindSpeed}km/h</span>
             </p>
           </div>
           <div className="current-temperature">
-            <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png" />
-            <span className="current-temperature-amount">20</span>
+            <img src={weatherData.currentIconUrl} alt="clear-sky" />
+            <span className="current-temperature-amount">
+              {weatherData.currentTemperature}
+            </span>
             <span className="unit">°C</span>
           </div>
         </div>
