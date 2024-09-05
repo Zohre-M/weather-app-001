@@ -37,8 +37,26 @@ export default function Weather() {
       </main>
       <footer>
         <p>
-          This project was coded by <a>Zohreh Maghsoodi</a>, is open-sourced on
-          <a>GitHub</a> and hosted on <a>Vercel</a>
+          This project was coded by{" "}
+          <a href="https://github.com/Zohre-M" target="_blank" rel="noreferrer">
+            Zohreh Maghsoodi
+          </a>
+          , is open-sourced on{" "}
+          <a
+            href="https://github.com/Zohre-M/weather-app-001.git "
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>{" "}
+          and hosted on{" "}
+          <a
+            href="https://weather-app-001-three.vercel.app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Vercel
+          </a>
         </p>
       </footer>
     </div>

@@ -13,7 +13,7 @@ body {
 }
 header {
   padding-bottom: 30px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 main {
   margin-top: 30px;
@@ -43,7 +43,7 @@ footer {
   font-size: 14px;
   text-align: center;
   padding-top: 20px;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 footer a {
   color: rgb(136, 93, 241);
