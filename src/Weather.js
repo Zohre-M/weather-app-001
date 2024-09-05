@@ -35,6 +35,12 @@ export default function Weather() {
           </div>
         </div>
       </main>
+      <footer>
+        <p>
+          This project was coded by <a>Zohreh Maghsoodi</a>, is open-sourced on
+          <a>GitHub</a> and hosted on <a>Vercel</a>
+        </p>
+      </footer>
     </div>
   );
 }
