@@ -15,9 +15,48 @@ header {
   padding-bottom: 30px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
+main {
+  margin-top: 30px;
+}
 main h1 {
   font-size: 38px;
   line-height: 48px;
+  font-weight: 700;
+  margin: 0 auto;
+  margin-bottom: 18px;
+}
+main p {
+  margin: 0;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+main img {
+  width: 90px;
+  height: 90px;
+  margin-top: 8px;
+}
+.current-weather {
+  display: flex;
+  justify-content: space-between;
+}
+
+.current-temperature {
+  display: flex;
+  justify-content: flex-start;
+}
+.current-temperature-amount {
+  font-size: 88px;
+  font-weight: 700;
+}
+.unit {
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+.current-weather-data span {
+  color: rgb(246, 82, 130);
   font-weight: 700;
 }
 .search-bar {
@@ -47,5 +86,11 @@ main h1 {
   .search-button {
     margin-top: 20px;
     width: 100px;
+  }
+  .current-weather {
+    display: block;
+  }
+  .current-temperature {
+    margin-top: 10px;
   }
 }
